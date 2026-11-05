@@ -7,7 +7,11 @@ PlayStation-style look.
 This repository holds the engine's **releases** - the installers - and
 their notes. The engine's source isn't public.
 
+![The editor: a tactics battle laid out, with the Scene, Game, Inspector and Assets panels](screenshots/editor.png)
+
 ## What's in it
+
+![New Project: start from Empty or a template for each kit](screenshots/new-project.png)
 
 - **The Project Manager** - your projects, a gallery of templates to start
   from, Play and Open.
@@ -32,13 +36,20 @@ their notes. The engine's source isn't public.
    sudo apt install ./vartis-engine_*_amd64.deb
    ```
 
-3. **Vartis Editor** is in your applications menu.
+3. **Vartis Editor** is in your applications menu. The first time, it
+   welcomes you: **Create a Project...** starts one from a template, and
+   **Help** has the guides, readable without the internet.
+
+   ![The Project Manager's welcome on a new computer](screenshots/project-manager.png)
 
 Another Linux: take `VartisEngine-Installer-<version>-linux-x86_64.run`
 and run it (`chmod +x` it first). Windows is planned.
 
-**Updating:** the Project Manager tells you when there's a newer version
-and installs it with its **Update** button.
+**Updating:** the Project Manager tells you when there's a newer version:
+a gold **Update to 0.x.y** button beside the engine's version. Press it,
+then **Download and Install**: it downloads the new `.deb`, checks it
+against the SHA-256 listed on this page, and installs it after your
+password. Then **Restart Now**. Your projects are not changed.
 
 **Removing:** `sudo apt remove vartis-engine` - your projects
 (`~/VartisProjects`) are left as they are.
